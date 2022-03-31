@@ -1,16 +1,25 @@
 <section> 
 <p id="notice"><%= notice %></p>
 
-<h1>BUD.get app</h1>
+<%= image_tag("budLogo", :alt => "bud.get Logo") %>
+
+<div class="highlight">
+  <h1>"La web-app qui te permet de gérer ton budget !"</h1>
+  <div class="header_highlight"></div>
+</div>
+
 <h2>Operations</h2>
 
 <table>
   <thead>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400&display=swap" rel="stylesheet">
     <tr>
       <th>Name</th>
       <th>Amount</th>
       <th>Date</th>
-      <th>Type</th>
+      <th>Kind</th>
 
       <th colspan="3"></th>
     </tr>
@@ -23,7 +32,7 @@
       <tr>
         <td><%= operation.name %></td>
         <td><%= operation.amount %></td>
-        <td><%= operation.created_at %></td>
+        <td><%= operation.created_at.strftime('%m/%d/%Y') %></td>
         <td><%= operation.kind %></td>
         <td><%= link_to 'Show', operation, class: "button_show" %></td>
         <td><%= link_to 'Edit', edit_operation_path(operation), class: "button_edit" %></td>
@@ -32,9 +41,11 @@
     <% end %>
   </tbody>
 </table>
-Total : <%= result %>
+<div class="total">TOTAL : <%= result %></div>
 
 <br>
 
+<div class="newOP">
 <%= link_to 'New Operation +', new_operation_path, class: "button_newop" %>
+</div>
 </section>

@@ -13,10 +13,47 @@ section{
     background-color: black;
     color: #FBFBF2;
 
-    font-family: Helvetica, sans-serif;
+    font-family: 'Spartan', sans-serif;
 }
-h1{
-    color:red
-}
+// h1{
+//     font-style: italic;
+//     font-weight: lighter;
+//     color:#FBFBF2;
+// }
 
+// div.header_highlight{
+//     background-color: red;
+//     width: 520px;
+//     height: 20px;
+//     padding-left: -5px;
+// }
+
+
+// div .hightlight{
+//     display: flex;
+//     align-items: flex-end;
+// }
+
+// .header_highlight {
+//     // display: flex;
+//     background-color: #4E8094;
+//     height: 25px;
+//     width: 530px;
+    
+//     // text-align: right;
+//     // align-items: flex-end;
+//     position: absolute;
+//     // position: relative;
+// }
+ 
+h1 {
+    // margin-left: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color:#FBFBF2;
+    // position: relative;
+    margin: 20px 0;
+    // position: absolute;
+}
+ 
 
