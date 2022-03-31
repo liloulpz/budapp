@@ -1,32 +1,6 @@
-<%=form_with(model: operation) do |form| %>
-  <% if operation.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(operation.errors.count, "error") %> prohibited this operation from being saved:</h2>
-
-      <ul>
-        <% operation.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name , class: "form-control"%>
-  </div>
-
-  <div class="field">
-    <%= form.label :amount %>
-    <%= form.text_field :amount , class: "form-control"%>
-  </div>
-
-  <div class="field">
-    <%= form.label :kind %>
-    <%= form.text_field :kind , class: "form-control"%>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= simple_form_for operation do |f| %>
+  <%= f.input :name %>
+  <%= f.input :amount %>
+  <%= f.input :kind, collection: ['Alimentation', 'Charges', 'Transport', 'Santé', 'Restaurant', 'Loisirs', 'Cadeaux', 'Autre'], include_blank: false, as: :select %>
+  <%= f.button :submit, class: 'btn btn-info' %>
 <% end %>
