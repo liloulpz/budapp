@@ -6,45 +6,26 @@ html{
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    // background-color: black;
 }
+
+body {
+    background-color: black;
+    // color: #333;
+    margin: 33px; }
+  
+  body, p, ol, ul, td {
+    font-family: 'Spartan', sans-serif;
+    font-size: 14px;
+    line-height: 18px; }
 
 section{
     background-color: black;
     color: #FBFBF2;
 
     font-family: 'Spartan', sans-serif;
-}
-// h1{
-//     font-style: italic;
-//     font-weight: lighter;
-//     color:#FBFBF2;
-// }
-
-// div.header_highlight{
-//     background-color: red;
-//     width: 520px;
-//     height: 20px;
-//     padding-left: -5px;
-// }
-
-
-// div .hightlight{
-//     display: flex;
-//     align-items: flex-end;
-// }
-
-// .header_highlight {
-//     // display: flex;
-//     background-color: #4E8094;
-//     height: 25px;
-//     width: 530px;
     
-//     // text-align: right;
-//     // align-items: flex-end;
-//     position: absolute;
-//     // position: relative;
-// }
+}
  
 h1 {
     // margin-left: 20px;
@@ -57,4 +38,98 @@ h1 {
 }
  
 
+img{
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .newOP{
+    margin: 30px 0;
+
+  }
+  
+  .total{
+    margin-top: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  a{
+    text-decoration: none;
+  }
+
+// DESTROY
+a.button_destroy {
+  color: red; }
+
+a.button_destroy:visited {
+  color: red; }
+
+a.button_destroy:hover {
+  color: #FBFBF2;
+  background-color: red; }
+
+//EDIT
+a.button_edit {
+  color: #61C26B; }
+
+a.button_edit:visited {
+  color: #61C26B; }
+
+a.button_edit:hover {
+  color: #FBFBF2;
+  background-color: #61C26B; }
+
+//SHOW
+a.button_show {
+  color: #FBFBF2; }
+
+a.button_show:visited {
+  color: #FBFBF2; }
+
+a.button_show:hover {
+  color: black;
+  background-color: #FBFBF2; }
+
+//NEW OPERATION
+a.button_newop {
+  color: black;
+}
+
+a.button_newop:visited {
+  color: black; }
+
+a.button_newop:hover {
+  color: #FBFBF2;
+  background-color: black; }
+
+  //BACK
+a.button_back {
+  color: #076d82; }
+
+a.button_back:visited {
+  color: #076d82; }
+
+a.button_back:hover {
+  color: black;
+  background-color: #076d82; }
+
+
+th {
+  padding-bottom: 20px; }
+
+td {
+  padding: 0 10px 20px; }
+
+
+div.field,
+div.actions {
+  margin-bottom: 10px; }
+
+.actions{
+    color: red;
+}
 

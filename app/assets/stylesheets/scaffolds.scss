@@ -13,72 +13,6 @@ pre {
   padding: 10px;
   font-size: 11px; }
 
-  a{
-    text-decoration: none;
-  }
-
-// DESTROY
-a.button_destroy {
-  color: red; }
-
-a.button_destroy:visited {
-  color: red; }
-
-a.button_destroy:hover {
-  color: #FBFBF2;
-  background-color: red; }
-
-//EDIT
-a.button_edit {
-  color: #61C26B; }
-
-a.button_edit:visited {
-  color: #61C26B; }
-
-a.button_edit:hover {
-  color: #FBFBF2;
-  background-color: #61C26B; }
-
-//SHOW
-a.button_show {
-  color: #FBFBF2; }
-
-a.button_show:visited {
-  color: #FBFBF2; }
-
-a.button_show:hover {
-  color: black;
-  background-color: #FBFBF2; }
-
-//NEW OPERATION
-a.button_newop {
-  color: #FBFBF2;
-}
-
-a.button_newop:visited {
-  color: #FBFBF2; }
-
-a.button_newop:hover {
-  color: black;
-  background-color: #FBFBF2; }
-
-  //BACK
-a.button_back {
-  color: #B381D1; }
-
-a.button_back:visited {
-  color: #B381D1; }
-
-a.button_back:hover {
-  color: black;
-  background-color: #B381D1; }
-
-
-th {
-  padding-bottom: 20px; }
-
-td {
-  padding: 0 10px 20px; }
 
 div.field,
 div.actions {
@@ -112,22 +46,6 @@ div.actions {
   font-size: 12px;
   list-style: square; }
 
-// label {
-//   display: block; }
+label {
+  display: block; }
 
-img{
-  width: 300px;
-  margin-bottom: 10px;
-}
-
-
-.newOP{
-  margin-top: 30px;
-}
-
-.total{
-  margin-top: 30px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 20px;
-}

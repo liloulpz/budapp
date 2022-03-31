@@ -26,6 +26,9 @@
   </thead>
 
   <tbody>
+  <div class="newOP">
+  <%= link_to 'New Operation +', new_operation_path, class: "button_newop btn btn-light" %>
+  </div>
     <% result = 0 %>
     <% @operations.each do |operation| %>
       <% result += operation.amount %>
@@ -34,9 +37,9 @@
         <td><%= operation.amount %></td>
         <td><%= operation.created_at.strftime('%m/%d/%Y') %></td>
         <td><%= operation.kind %></td>
-        <td><%= link_to 'Show', operation, class: "button_show" %></td>
-        <td><%= link_to 'Edit', edit_operation_path(operation), class: "button_edit" %></td>
-        <td><%= link_to 'Destroy', operation, method: :delete, data: { confirm: 'Are you sure?' }, class: "button_destroy" %></td>
+        <td><%= link_to 'Show', operation, class: "button_show btn btn-outline-light" %></td>
+        <td><%= link_to 'Edit', edit_operation_path(operation), class: "button_edit btn btn-outline-success" %></td>
+        <td><%= link_to 'Destroy', operation, method: :delete, data: { confirm: 'Are you sure?' }, class: "button_destroy btn btn-outline-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -45,7 +48,5 @@
 
 <br>
 
-<div class="newOP">
-<%= link_to 'New Operation +', new_operation_path, class: "button_newop" %>
-</div>
+
 </section>
