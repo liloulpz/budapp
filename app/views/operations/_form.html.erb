@@ -1,6 +1,6 @@
 <%= simple_form_for operation do |f| %>
   <%= f.input :name %>
   <%= f.input :amount %>
-  <%= f.input :kind, collection: ['Salaire', 'Alimentation', 'Charges', 'Transport', 'Santé', 'Restaurant', 'Loisirs', 'Cadeaux', 'Autre'], include_blank: false, as: :select %>
+  <%= f.input :kind, collection: ['Salary', 'Food', 'Monthly charge', 'Transport', 'Health', 'Restaurant', 'Hobbies', 'Gifts', 'Other'], include_blank: false, as: :select %>
   <%= f.button :submit, class: 'btn btn-info' %>
 <% end %>
