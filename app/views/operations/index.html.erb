@@ -35,7 +35,7 @@
       <tr>
         <td><%= operation.name %></td>
         <td><%= operation.amount %></td>
-        <td><%= operation.created_at.strftime('%m/%d/%Y') %></td>
+        <td><%= operation.created_at.strftime('%d/%m/%Y') %></td>
         <td><%= operation.kind %></td>
         <td><%= link_to 'Show', operation, class: "button_show btn btn-outline-light" %></td>
         <td><%= link_to 'Edit', edit_operation_path(operation), class: "button_edit btn btn-outline-success" %></td>
