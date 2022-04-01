@@ -4,6 +4,7 @@ class OperationsController < ApplicationController
   # GET /operations or /operations.json
   def index
     @operations = current_user.operations if current_user
+
   end
 
   # GET /operations/1 or /operations/1.json

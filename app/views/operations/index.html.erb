@@ -45,6 +45,12 @@
   </tbody>
 </table>
 <div class="total">TOTAL : <%= result %></div>
+<%# <%= pie_chart Operation.group(:kind).count %>
+<%# <%= pie_chart Operation.where(:user_id => current_user.id).group(:kind).sum(:amount) %>
+<%= bar_chart Operation.where(:user_id => current_user.id).group(:kind).sum(:amount), colors: [["#B381D1", "#BF2828", "#69A5BD", "#61C26B", "#EF924F", "#2D7C60", "#EBC361", "#A86A3D", "#CC6382"]] %>
+
+
+
 
 <br>
 

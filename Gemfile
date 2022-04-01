@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 gem 'bootstrap', '~> 5.1.3'
 gem 'devise'
+gem "chartkick"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
